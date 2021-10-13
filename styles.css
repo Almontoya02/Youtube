@@ -2,4 +2,16 @@
     padding: 0;
     margin: 0;
 }
+.card-text{
+    
+    justify-content:  space-between;
+}
+.imag-container > img{
+       height: 20px;
+}
+.imag-morron > img{
+    height: 40px;
+    border-radius: 50%;
+}
+
 
