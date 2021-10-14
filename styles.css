@@ -13,5 +13,10 @@
     height: 40px;
     border-radius: 50%;
 }
-
+.imag-container{
+    display: none;
+}
+.card-hover:hover .imag-container{
+    display: block;
+}
 
