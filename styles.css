@@ -5,6 +5,7 @@
 .card-text{
     
     justify-content:  space-between;
+   
 }
 .imag-container > img{
        height: 20px;
@@ -15,8 +16,24 @@
 }
 .imag-container{
     display: none;
+   
 }
 .card-hover:hover .imag-container{
     display: block;
+    
 }
-
+.menu-container.imag-container{
+    display: none;
+}
+.dropdown-menu{
+display: flex;
+}
+.menu-container{
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+    margin-top: 30px;
+    
+}
+.dropdown-item{
+    color: white;
+}

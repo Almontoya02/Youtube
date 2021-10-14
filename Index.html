@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <body>
         <div class="card" style="width: 18rem;">
@@ -18,9 +19,26 @@
                    <div class="col-8 ">
                     <h6 class="card-title text-white">Marron 5 - Won't Go Home Without You (Official Musi...</h6>
                    </div>
-                   <div class="col-1 imag-container ">
+                   <div id="bton" onclick="showContainer()" class="col-1 imag-container popover-dismiss" data-bs-trigger="focus" data-bs-toggle="popover">
                     <img src="assets/ellipsis-v-solid.svg" alt="imagen">
                    </div>
+                    <ul id="main-menu" class="dropdown-menu menu-container ">
+                        <div class="row">
+                            <div class="col icon-1">
+                           <img src="asset/clock-regular.svg" alt="icono">
+                            </div>
+                            <div class="col">
+                                <li><a class="dropdown-item" href="#">Agregar a la fila</a></li>
+                            </div>
+                        </div>
+                        <li><a class="dropdown-item" href="#">Agregar a la fila</a></li>
+                        <li><a class="dropdown-item" href="#">Guardar en ver mas tarde</a></li>
+                        <li><a class="dropdown-item" href="#">guardar en una lista de reproducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">No me interesa</a></li>
+                        <li><a class="dropdown-item" href="#">no recomendar el canal</a></li>
+                        <li><a class="dropdown-item" href="#">denunciar</a></li>
+                      </ul> 
                </div>
               
               <div class="container">
@@ -30,7 +48,7 @@
                   </div>
                   <div class="row">
                     <div class="col align-self-start">
-                        222 M de visitas
+                        222 M de visitas 
                     </div>
                     <div class="row">
                         <div class="col align-self-start">
