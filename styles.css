@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 .navcolor{
     background-color: rgb(32, 32, 32);
     display: flex;
@@ -12,9 +11,13 @@
 
 }
 
+.navbar{
+    height: 10%;
+}
+
 .logo{
-    width: 150px;
-    height: 45px;
+    width: 130px;
+    height: 38px;
 }
 
 .nvbarcontent{
@@ -41,3 +44,167 @@
     align-items: center !important;
 
 }
+.navbar{
+    height: 60px !important;
+}
+
+.btn-outline-secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    border-radius: 0%;
+    border-color: rgb(49, 49, 49);
+    pointer-events: none;
+}
+
+i{
+    cursor: pointer;
+    color: white;
+}
+.containerMic{
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    margin-left: 1.5%;
+}
+.containerMicModal{
+
+    display: flex;  
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background-color: rgb(76, 76, 76);
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    margin-left: 1.5%;
+}
+.modal-header{
+    border:1px solid transparent !important;
+}
+
+.miccontent{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerMicModal:active{
+    background-color: rgb(56, 56, 56);  
+}
+
+.containerMic:active{
+    background-color: rgb(56, 56, 56);  
+}
+.miccontent > img{
+    width: 100%;
+    height: 100%;
+}
+
+.input-group{
+    border-radius: 0;
+}
+
+.account{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.iconsimg > img{
+    width: 28px;
+    height: 28px;
+
+}
+
+.menusidebar{
+    border-radius: 50%;
+    border: 1px solid transparent !important;
+}
+
+
+.menusidebar:focus{
+
+    background-color: rgb(49, 49, 49);
+
+    outline: none;
+    box-shadow: none;
+}
+
+.inputsearch{
+    background-color: rgb(18, 18, 18);
+    border-color: rgb(49, 49, 49);
+    border-radius: 2px;
+}
+
+.inputsearch:focus{
+    background-color: rgb(18, 18, 18);
+    border-color: rgb(28, 98, 185);
+    border-radius: 2px;
+    box-shadow: none;   
+    color: white;
+
+}
+
+.deletesearch{
+    position: absolute;
+    top: 16%;
+    left: 84%;
+    z-index: 90;
+    display: none;
+    border-radius: 12px !important;
+}
+
+.deletesearch > img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+input.inputsearch:focus ~ div.deletesearch {
+	display:block;
+}
+
+.deletesearch:hover{
+    display: none;
+    transition: 100ms;
+    background-color: rgb(49, 49, 49);
+    
+}
+
+.modalMic{
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.modal-dialog{
+    padding: 0;
+    margin-top: 0.5%;
+    width: 100% !important;
+    height: 70% !important;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.modal-content{
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgb(32, 32, 32) !important;
+    border-radius: 0px;
+
+}
+

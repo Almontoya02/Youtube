@@ -6,34 +6,94 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
     </head>
     <body>
         <nav class="navbar navbar-dark  navcolor">
 
             <div class="row nvbarcontent">
                 <div class="col-3 ">
-                    
                     <div class="row">
-                        <div class="col-3">  
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <div class="col-2">  
+                        <button class="navbar-toggler menusidebar" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                            <span class="" role="button"><img src="assets/menu_white_36dp.svg" style="width: 25px; height: 25px;" alt=""></span>
                         </button>
                         </div> 
-                        <div class="col-9">
+                        <div class="col-10">
                             <img src="assets/logo.png" class="logo" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-6 alignment">
+                <div class="col-5 alignment">
                     <div class="input-group mb-3 m-sm-1 ">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control inputsearch position-relative"  placeholder="Buscar" aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="deletesearch">
+                            <img src="assets/close_white_18dp.svg" alt="">
+                        </div>
+                        </input>
                         <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                            
+                            <button class="btn btn-outline-secondary justify-content-center align-content-center" type="button">
+                                <img src="assets/search_white_18dp.svg" alt="Buscar">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="containerMic" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Mic">
+                        <img src="assets/mic_white_24dp.svg" >
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modalMic" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content " style="margin-left: 10% !important;">
+                            <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body style="margin-left: 10% !important;"">
+                                <h4 class="modal-title" id="exampleModalLabel" style="color: white;">Realiza búsquedas con la voz</h4>
+                                <br>
+                                <p style="color: rgb(160,160,160);">
+                                    Para realizar búsquedas por voz, ve a la configuración del navegador y habilita el acceso al micrófono
+                                </p>
+                                <br><br><br><br>
+                                <div class="miccontent">
+                                    <div class="containerMicModal" alt="">
+                                        <img src="assets/mic_white_24dp.svg" >
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 ">
-                    icons
+                <div class="col-4 ">
+                    
+                    <div class="row justify-content-end iconscontent">
+
+                        <div class="col-7">
+
+                        </div>
+                        <div class="col">                            
+                            <div class="row ">
+                            
+                                <div class="col m-0 p-0 iconsimg">
+                                    <img src="assets/video_call_white_24dp.svg" alt="">
+                                </div>
+                                <div class="col m-0 p-0 iconsimg">      
+                                    <img src="assets/apps_white_24dp.svg" alt="">
+                                </div> 
+                                <div class="col m-0 p-0 iconsimg">      
+                                    <img src="assets/notifications_white_36dp.svg" alt="">
+                                </div>
+                                <div class="col m-0 p-0 iconsimg">  
+                                    <img src="assets/account.jpg"  class="account" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             
             </div>
