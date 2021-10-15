@@ -32,8 +32,29 @@ display: flex;
     flex-direction: column;
     background-color: rgb(33, 33, 33);
     margin-top: 30px;
+    width: 500px;
     
+}
+.menu-container > ul{
+    background-color: rgb(33, 33, 33);
 }
 .dropdown-item{
     color: white;
+}
+.dropdown-divider{
+    color: white;
+
+}
+.iconos{
+    
+    width: 50px;
+    top: 5px;
+    right: -10px;
+    flex-direction: column;
+    position: absolute;
+    
+}
+.mainCard-container{
+    position: relative;
+    width: 18rem;
 }
