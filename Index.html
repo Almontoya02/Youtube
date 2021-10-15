@@ -9,7 +9,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
     </head>
     <body>
-        <nav class="navbar navbar-dark  navcolor">
+        <nav class="navbar navbar-dark  navcolor" >
 
             <div class="row nvbarcontent">
                 <div class="col-3 ">
@@ -34,22 +34,22 @@
                         </input>
                         <div class="input-group-append">
                             
-                            <button class="btn btn-outline-secondary justify-content-center align-content-center" type="button">
-                                <img src="assets/search_white_18dp.svg" alt="Buscar">
+                            <button class="btn btn-outline-secondary justify-content-center align-content-center" type="button" >
+                                <img src="assets/search_white_18dp.svg" alt="Buscar" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Buscar">
                             </button>
                         </div>
                     </div>
-                    <div class="containerMic" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Mic">
+                    <div class="containerMic" role="button" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Mic" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Realiza busquedas por voz">
                         <img src="assets/mic_white_24dp.svg" >
                     </div>
                     <!-- Modal -->
                     <div class="modal fade modalMic" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                        <div class="modal-content " style="margin-left: 10% !important;">
+                        <div class="modal-content " style="margin-left: 0% !important;">
                             <div class="modal-header">
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="margin-left: 10% !important;">
+                            <div class="modal-body" style="margin-left: 0% !important;">
                                 <h4 class="modal-title" id="exampleModalLabel" style="color: white;">Realiza búsquedas con la voz</h4>
                                 <br>
                                 <p style="color: rgb(160,160,160);">
@@ -77,14 +77,39 @@
                         <div class="col">                            
                             <div class="row ">
                             
-                                <div class="col m-0 p-0 iconsimg">
-                                    <img src="assets/video_call_white_24dp.svg" alt="">
+                                <div class="col m-0 p-0 iconsimg dis position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Crear">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/video_call_white_24dp.svg" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu1" aria-labelledby="dropdownMenuLink">
+                                        <li>
+                                            <a class="dropdown-item" href="#"><img src="assets/smart_display_white_24dp.svg" alt="">  Subir Video</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="assets/podcasts_white_24dp.svg" alt=""> Transmitir en vivo</a></li>
+                                    </ul>
                                 </div>
-                                <div class="col m-0 p-0 iconsimg">      
-                                    <img src="assets/apps_white_24dp.svg" alt="">
+                                <div class="col m-0 p-0 iconsimg position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apps de Youtube">      
+                                    <a href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/apps_white_24dp.svg" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu2 " aria-labelledby="dropdownMenuLink2">
+                                        <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid rgb(49, 49, 49);"><img src="assets/youtube (1).png" alt=""> Youtube TV</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="assets/youtube (1).png" alt=""> Youtube Music</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="assets/youtube (1).png" alt=""> Youtube Kids</a></li>
+                                        <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid rgb(49, 49, 49);" ><img src="assets/youtube (1).png" alt=""> Academia de creadores</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="assets/youtube (1).png" alt=""> Toutube para artistas</a></li>
+                                    </ul>
                                 </div> 
-                                <div class="col m-0 p-0 iconsimg">      
-                                    <img src="assets/notifications_white_36dp.svg" alt="">
+                                <div class="col m-0 p-0 iconsimg position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notificaciones">      
+                                    <a href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/notifications_white_24dp.svg" alt="">  
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu3 " aria-labelledby="dropdownMenuLink3">
+                                        <li><a class="dropdown-item droptitle" href="#" style="border-bottom: 1px solid rgb(49, 49, 49);"> <div class="notificationstitle"><b> Notificaciones</b> <img src="assets/settings_white_24dp.svg" alt=""></div></a></li>
+                                        <li><a class="dropdown-item" href="#"><div><img src="assets/youtube (1).png" alt=""> Youtube Music</div></a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="assets/youtube (1).png" alt=""> Youtube Kids</a></li>
+                                        <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid rgb(49, 49, 49);" ><img src="assets/youtube (1).png" alt=""> Academia de creadores</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="assets/youtube (1).png" alt=""> Toutube para artistas</a></li>
+                                    </ul>
                                 </div>
                                 <div class="col m-0 p-0 iconsimg">  
                                     <img src="assets/account.jpg"  class="account" alt="">
